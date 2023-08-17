@@ -59,7 +59,6 @@ sources:
             tests:
               - not_null
 
-
       - name: subscriptions
         description: This model contains information about Bingeflix subscriptions.
         columns:
