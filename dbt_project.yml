@@ -23,7 +23,22 @@ seeds:
   dbt_project_evaluator:
     dbt_project_evaluator_exceptions:
       +enabled: false
-      
+
+  course_advanced_dbt:
+    unit_testing:
+      +schema: unit_testing
+      +tags: unit_testing
+      unit_test_input_dim_subscriptions:
+        +column_types:
+          subscription_id: number
+          subscription_plan_id: number
+          user_id: number
+          starts_at: timestamp_ntz
+          ends_at: timestamp_ntz
+          plan_name: text
+          pricing: number
+          billing_period: text   
+             
 # set doc coverage to 75% instead
 vars:
   dbt_project_evaluator:
